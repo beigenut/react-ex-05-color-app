@@ -1,5 +1,5 @@
 <p align="center">
-  <h3 align="center">https://github.com/beigenut/react-ex-05-color-chart-app</h3>
+  <h3 align="center">https://github.com/beigenut/react-ex-05-color-app</h3>
   <p align="center">
   My own color palettes/charts using `React Hook`. <br>
   <a href="url" target="_blank"> View website</a>
@@ -20,7 +20,7 @@
 
 ## About The Project
 
-<img src="url" width="800px">
+<img src="https://drive.google.com/uc?export=view&id=1uIQIbfBua68H0MSR9wXQgvW8t0rq98wN" width="800px">
  This application was developed to study `React Hook` and other React components.
 
 ### Built With
@@ -31,7 +31,9 @@
   Slider component for React
 - [rc-slider](https://www.npmjs.com/package/rc-slider)
   String copy to Clipboard
+- [react-sortable-hoc]()
 - [react-copy-to-clipboard](https://www.npmjs.com/package/react-copy-to-clipboard)
+- [emoji-mart]()
   To use browser history, and url params
 - [react-router-dom](https://www.npmjs.com/package/react-router-dom)
   Site has been deployed on
@@ -43,7 +45,7 @@
 
 ### Prerequisites
 
-`npm i react-create-app node-sass @material-ui/core chroma-js rc-slider react-copy-to-clipboard react-router-dom`
+`npm i react-scripts react-dom @material-ui/core react-router-dom chroma-js`
 
 <!-- USAGE EXAMPLES -->
 
@@ -65,4 +67,4 @@ Contributions are what make the open source community such an amazing place to b
 
 ## Contact
 
-Project Link: [https://github.com/beigenut/react-ex-05-color-chart-app](https://github.com/beigenut/react-ex-05-color-chart-app)
+Project Link: [https://github.com/beigenut/react-ex-05-color-app](https://github.com/beigenut/react-ex-05-color-app)
