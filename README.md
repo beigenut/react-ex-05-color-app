@@ -2,7 +2,7 @@
   <h3 align="center">https://github.com/beigenut/react-ex-05-color-app</h3>
   <p align="center">
   My own color palettes/charts using `React Hook`. <br>
-  <a href="url" target="_blank"> View website</a>
+  <a href="https://www.react-color-picker-app.netlify.com" target="_blank"> View website</a>
 </p>
 </p>
 
