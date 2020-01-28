@@ -11,7 +11,7 @@ function App() {
   // localStorage 에 저장된 정보가 있는지 부터 확인하고,
   const savedPalettes = JSON.parse(window.localStorage.getItem("palettes"));
   // 있으면 localStorage 에 있는 정보를 없으면, seedColors 를
-  const [palettes, setPalettes] = React.useState(savedPalettes.length > 0 ? savedPalettes : seedColors);
+  const [palettes, setPalettes] = React.useState(savedPalettes || seedColors);
 
   const findPalette = id => {
     return palettes.find(function (palette) {
