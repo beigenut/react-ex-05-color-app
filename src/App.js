@@ -11,13 +11,17 @@ function App() {
   // localStorage 에 저장된 정보가 있는지 부터 확인하고,
   const savedPalettes = JSON.parse(window.localStorage.getItem("palettes"));
   // 있으면 localStorage 에 있는 정보를 없으면, seedColors 를
-  const [palettes, setPalettes] = React.useState(savedPalettes || seedColors);
+  const [palettes, setPalettes] = React.useState(savedPalettes.length > 0 ? savedPalettes : seedColors);
 
   const findPalette = id => {
     return palettes.find(function (palette) {
       return palette.id === id;
     });
   };
+
+  const deletePalette = id => {
+    setPalettes(palettes.filter(palette => palette.id !== id))
+  }
 
   const syncLocalStorage = () => {
     window.localStorage.setItem("palettes", JSON.stringify(palettes));
@@ -49,7 +53,7 @@ function App() {
         exact
         path="/"
         render={routeProps => (
-          <PaletteList palettes={palettes} {...routeProps} />
+          <PaletteList palettes={palettes} {...routeProps} deletePalette={deletePalette} />
         )}
       />
       <Route

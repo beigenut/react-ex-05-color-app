@@ -5,7 +5,7 @@ import { withStyles } from "@material-ui/styles";
 import styles from "./styles/PaletteListStyle";
 
 const PaletteList = props => {
-  const { palettes, history, classes } = props;
+  const { palettes, history, classes, deletePalette } = props;
 
   return (
     <div className={classes.root}>
@@ -17,7 +17,7 @@ const PaletteList = props => {
         <div className={classes.palettes}>
           {palettes.map(palette => (
             // <Link to={`/palette/${palette.id}`}><MiniPalette {...palette} /></Link>
-            <MiniPalette {...palette} history={history} key={palette.id} />
+            <MiniPalette {...palette} history={history} key={palette.id} deletePalette={deletePalette} />
           ))}
         </div>
       </div>
